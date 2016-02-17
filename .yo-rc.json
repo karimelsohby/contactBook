@@ -1,0 +1,7 @@
+{
+  "generator-react-webpack": {
+    "appName": "contactBook",
+    "style": "scss",
+    "postcss": true
+  }
+}
