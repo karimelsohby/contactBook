@@ -1,6 +1,160 @@
 /* Base Application Styles */
 @import url(bootstrap.min.css);
+* {
+  color: #FFFFFF;
+  font-family: 'Lato'; }
+
 body {
-  color: green; }
+  background: URL("../images/bg.jpg"); }
+
+.title {
+  font-size: 48px;
+  font-weight: bold;
+  padding: 65px;
+  text-align: center; }
+
+input {
+  color: #606060;
+  width: 100%;
+  border: 0px;
+  padding-top: 10px;
+  padding-left: 30px;
+  font-style: italic;
+  font-size: 18px;
+  color: #606060; }
+  input::-webkit-input-placeholder {
+    color: #eaeaea !important; }
+  input:-moz-placeholder {
+    /* Firefox 18- */
+    color: #eaeaea !important; }
+  input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #eaeaea !important; }
+  input:-ms-input-placeholder {
+    color: #eaeaea !important; }
+
+.main {
+  max-width: 940px;
+  text-align: center;
+  margin: 0 auto; }
+  .main .add {
+    border-bottom: 1px solid #eaeaea; }
+    .main .add * {
+      padding: 0px;
+      margin: 0px; }
+    .main .add .contact_form {
+      background-color: white; }
+      .main .add .contact_form div {
+        color: #eaeaea;
+        text-align: left; }
+      .main .add .contact_form input[type=file] {
+        display: none; }
+      .main .add .contact_form .photo_container {
+        float: left;
+        margin: 15px; }
+        .main .add .contact_form .photo_container div {
+          border-radius: 50%;
+          border: 5px solid #eaeaea;
+          width: 70px;
+          height: 70px;
+          font-size: 10px;
+          color: #eaeaea;
+          position: relative;
+          padding: 17px;
+          cursor: Pointer;
+          background-size: cover; }
+          .main .add .contact_form .photo_container div span {
+            color: #eaeaea; }
+      .main .add .contact_form .details {
+        margin-top: 20px;
+        float: left; }
+        .main .add .contact_form .details div {
+          font-size: 23px;
+          color: #606060;
+          color: #eaeaea;
+          font-style: italic; }
+    .main .add .button {
+      padding-top: 40px;
+      font-size: 18px;
+      color: #FFFFFF;
+      cursor: Pointer;
+      height: 100px; }
+    .main .add .cancel_button {
+      background-color: #868686; }
+    .main .add .save_button {
+      background-color: #9013FE; }
+  .main .search {
+    border-bottom: 1px solid #eaeaea; }
+    .main .search * {
+      height: 100px;
+      padding: 0px;
+      margin: 0px; }
+    .main .search .search_form {
+      background-color: white;
+      border-bottom: 1px solid #eaeaea; }
+      .main .search .search_form input {
+        padding-left: 30px; }
+    .main .search .button {
+      padding-top: 40px;
+      font-size: 18px;
+      color: #FFFFFF; }
+    .main .search .add_button {
+      background-color: #9013FE;
+      cursor: Pointer; }
+  .main .contact {
+    background-color: white;
+    min-height: 120px;
+    border-bottom: 1px solid #eaeaea; }
+    .main .contact:hover {
+      opacity: 0.8; }
+      .main .contact:hover div.delete {
+        display: block;
+        opacity: 1; }
+    .main .contact div.delete {
+      display: none;
+      position: relative;
+      right: 40px;
+      top: 35px;
+      width: 40px;
+      height: 40px;
+      float: right;
+      cursor: pointer; }
+      .main .contact div.delete img {
+        max-height: 100%;
+        max-width: 100%; }
+    .main .contact div {
+      color: black;
+      text-align: left; }
+    .main .contact .photo_container {
+      float: left;
+      margin: 15px; }
+      .main .contact .photo_container div {
+        border-radius: 50%;
+        border: 5px solid #eaeaea;
+        width: 70px;
+        height: 70px;
+        font-size: 10px;
+        color: #eaeaea;
+        position: relative;
+        padding: 17px;
+        cursor: Pointer;
+        background-size: cover; }
+        .main .contact .photo_container div span {
+          color: #eaeaea;
+          text-align: center; }
+    .main .contact .details {
+      margin-top: 15px;
+      float: left; }
+      .main .contact .details div {
+        font-size: 23px;
+        color: #606060; }
+      .main .contact .details .name {
+        font-weight: bold; }
+
+.show {
+  display: block !important; }
+
+.hide {
+  display: none !important; }
 
 /*# sourceMappingURL=app.css.map */

@@ -1,7 +1,269 @@
 /* Base Application Styles */
 
 @import "bootstrap.min.css";
+$primary-color: #FFFFFF;
+$lightgrey: rgb(234,234,234);
+$darkgrey:#606060;
 
-body {
-  color: green;
+*
+{
+    color:$primary-color;
+    font-family:'Lato';
+}
+
+body 
+{
+    background:URL('../images/bg.jpg');
+}
+
+.title
+{
+	font-size:48px;
+	font-weight:bold;
+	padding:65px;
+	text-align:center;
+        
+}
+
+input
+{
+    color:$darkgrey;
+    width:100%;
+    border:0px;
+    padding-top:10px;
+    padding-left:30px;
+    font-style:italic;
+    font-size:18px;
+    color:$darkgrey;
+
+    &::-webkit-input-placeholder {
+    color: $lightgrey !important;
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+    color: $lightgrey !important;  
+    }
+
+    &::-moz-placeholder {  /* Firefox 19+ */
+    color: $lightgrey !important;  
+    }
+
+    &:-ms-input-placeholder {  
+    color: $lightgrey !important;  
+    }
+}
+
+
+.main
+{
+	max-width:940px;
+	text-align:center;
+        margin: 0 auto;
+	
+	.add
+	{
+		border-bottom:1px solid $lightgrey;
+		
+		* 
+		{
+			padding:0px;
+			margin:0px;
+		}
+                
+		.contact_form
+		{
+			background-color:white;
+
+                        div
+                        {
+                            color:$lightgrey;
+                            text-align:left;
+                        }
+                        
+                        input[type=file]
+                        {
+                            display:none;
+                        }
+
+                        .photo_container
+                        {
+                            float:left;
+                            margin:15px;
+                            
+                            div
+                            {
+
+                                border-radius:50%;
+                                border:5px solid $lightgrey;
+                                width:70px;
+                                height:70px;
+                                font-size:10px;
+                                color:$lightgrey;
+                                position:relative;
+                                padding:17px;
+                                cursor:Pointer;
+                                background-size:cover;
+                                
+                                span
+                                {
+                                    color:$lightgrey;
+                                }
+                            }
+                        }
+
+                        .details
+                        {
+                            margin-top:20px;
+                            float:left;
+                            
+                            div
+                            {
+                                font-size:23px;
+                                color:$darkgrey;
+                                color:$lightgrey;
+                                font-style:italic;
+                            }
+                        }
+		}
+		.button
+		{
+			padding-top:40px;
+			font-size:18px;
+                        color:$primary-color;
+                        cursor:Pointer;
+                        height:100px;
+			
+		}
+		.cancel_button
+		{
+			background-color:#868686;
+		}
+		.save_button
+		{
+			background-color:#9013FE;
+		}
+
+	}
+        .search
+	{
+		border-bottom:1px solid $lightgrey;
+		
+		* 
+		{
+			height:100px;
+			padding:0px;
+			margin:0px;
+		}
+		.search_form
+		{
+			background-color:white;
+			border-bottom:1px solid $lightgrey;
+                        
+                        input
+                        {
+                            padding-left:30px;
+                        }
+		}
+		.button
+		{
+			padding-top:40px;
+			font-size:18px;
+                        color:$primary-color;
+			
+		}
+		.add_button
+		{
+			background-color:#9013FE;
+                        cursor:Pointer;
+		}
+
+	}
+	.contact
+        {
+            background-color:white;
+            min-height:120px;
+            border-bottom:1px solid $lightgrey;
+            
+            &:hover{
+                opacity: 0.8;
+                
+                div.delete{
+                    display: block;
+                    opacity: 1;
+                }
+            }
+            
+            div.delete{
+                display: none;
+                position: relative;
+                right: 40px;
+                top: 35px;
+                width: 40px;
+                height: 40px;
+                float: right;
+                cursor: pointer;
+                
+                img{
+                    max-height: 100%;
+                    max-width: 100%;
+                }
+            }
+            
+            div
+            {
+                color:black;
+                text-align:left;
+            }
+            
+            .photo_container
+            {
+                float:left;
+                margin:15px;
+                div
+                {
+
+                    border-radius:50%;
+                    border:5px solid $lightgrey;
+                    width:70px;
+                    height:70px;
+                    font-size:10px;
+                    color:$lightgrey;
+                    position:relative;
+                    padding:17px;
+                    cursor:Pointer;
+                    background-size:cover;
+
+                    span
+                    {
+                        color:$lightgrey;
+                        text-align:center;
+                    }
+                }
+            }
+            
+            .details
+            {
+                margin-top:15px;
+                float: left;
+                div
+                {
+                    font-size:23px;
+                    color:$darkgrey;
+                }
+                .name
+                {
+                    font-weight:bold;
+                }
+            }
+        }
+}
+
+.show
+{
+    display:block !important;
+}
+
+.hide
+{
+    display:none !important;
 }
